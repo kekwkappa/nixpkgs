@@ -8,7 +8,7 @@ let
   version = "1.4.0";
   src = fetchurl {
     url = "https://github.com/hiddify/hiddify-next/releases/download/v${version}/Hiddify-Linux-x64.AppImage";
-    hash = "0fqjy5lnr1gb5jy9rm7lvsn8zxmrxik3vyg7jsg58smzn9akv3qi";
+    hash = "sha256-0fqjy5lnr1gb5jy9rm7lvsn8zxmrxik3vyg7jsg58smzn9akv3qi";
     #hash = "sha256-T4BWxhJ7q13KE1rvvFsnXhs2XVEmNkFTJbJ4e8PCg+0=";
   };
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
